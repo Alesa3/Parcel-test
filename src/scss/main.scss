@@ -1,0 +1,42 @@
+@use 'sass-utils' as *;
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $pink;
+}
+
+section {
+    background-color: $pink;
+    border: $circle-border-width * 1px solid $green;
+    padding-inline-start: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    width: $circle-diameter * 1px;
+    height: $circle-diameter * 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: $black;
+    margin-top: -100px;
+    text-align: center;
+    box-shadow: circle-drop-shadow(2, $dark-blue);
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+section:hover {
+    background-color: $green;
+    color: $white;
+
+}
